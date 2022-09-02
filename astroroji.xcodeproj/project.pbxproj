@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		349BFDF52818FEC100E80831 /* BottomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349BFDF42818FEC100E80831 /* BottomTabView.swift */; };
 		34B296F828121A34004D544A /* astrorojiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B296F728121A34004D544A /* astrorojiApp.swift */; };
 		34B296FA28121A34004D544A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B296F928121A34004D544A /* ContentView.swift */; };
 		34B296FC28121A37004D544A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B296FB28121A37004D544A /* Assets.xcassets */; };
@@ -16,6 +17,10 @@
 		34B2970E28121A37004D544A /* astrorojiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2970D28121A37004D544A /* astrorojiTests.swift */; };
 		34B2971828121A37004D544A /* astrorojiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2971728121A37004D544A /* astrorojiUITests.swift */; };
 		34B2971A28121A37004D544A /* astrorojiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2971928121A37004D544A /* astrorojiUITestsLaunchTests.swift */; };
+		34B2972B28121BE0004D544A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2972A28121BE0004D544A /* MainView.swift */; };
+		34B2972D28122CFB004D544A /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2972C28122CFA004D544A /* IconView.swift */; };
+		34B2973128123031004D544A /* HoroscopeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2973028123031004D544A /* HoroscopeApi.swift */; };
+		34DA30EE2893103200783D7F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DA30ED2893103200783D7F /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		349BFDF32818FDED00E80831 /* astroroji.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = astroroji.entitlements; sourceTree = "<group>"; };
+		349BFDF42818FEC100E80831 /* BottomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTabView.swift; sourceTree = "<group>"; };
 		34B296F428121A34004D544A /* astroroji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = astroroji.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B296F728121A34004D544A /* astrorojiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrorojiApp.swift; sourceTree = "<group>"; };
 		34B296F928121A34004D544A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +55,10 @@
 		34B2971328121A37004D544A /* astrorojiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = astrorojiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		34B2971728121A37004D544A /* astrorojiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrorojiUITests.swift; sourceTree = "<group>"; };
 		34B2971928121A37004D544A /* astrorojiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astrorojiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		34B2972A28121BE0004D544A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		34B2972C28122CFA004D544A /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
+		34B2973028123031004D544A /* HoroscopeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeApi.swift; sourceTree = "<group>"; };
+		34DA30ED2893103200783D7F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +109,16 @@
 		34B296F628121A34004D544A /* astroroji */ = {
 			isa = PBXGroup;
 			children = (
+				349BFDF32818FDED00E80831 /* astroroji.entitlements */,
 				34B296F728121A34004D544A /* astrorojiApp.swift */,
-				34B296F928121A34004D544A /* ContentView.swift */,
-				34B296FB28121A37004D544A /* Assets.xcassets */,
 				34B2970028121A37004D544A /* Persistence.swift */,
+				34B296F928121A34004D544A /* ContentView.swift */,
+				34B2972A28121BE0004D544A /* MainView.swift */,
+				34B2973028123031004D544A /* HoroscopeApi.swift */,
+				34B2972C28122CFA004D544A /* IconView.swift */,
+				349BFDF42818FEC100E80831 /* BottomTabView.swift */,
+				34DA30ED2893103200783D7F /* SettingsView.swift */,
+				34B296FB28121A37004D544A /* Assets.xcassets */,
 				34B2970228121A37004D544A /* astroroji.xcdatamodeld */,
 				34B296FD28121A37004D544A /* Preview Content */,
 			);
@@ -263,9 +280,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B2972D28122CFB004D544A /* IconView.swift in Sources */,
+				34B2972B28121BE0004D544A /* MainView.swift in Sources */,
 				34B2970128121A37004D544A /* Persistence.swift in Sources */,
+				34DA30EE2893103200783D7F /* SettingsView.swift in Sources */,
+				349BFDF52818FEC100E80831 /* BottomTabView.swift in Sources */,
 				34B296FA28121A34004D544A /* ContentView.swift in Sources */,
 				34B296F828121A34004D544A /* astrorojiApp.swift in Sources */,
+				34B2973128123031004D544A /* HoroscopeApi.swift in Sources */,
 				34B2970428121A37004D544A /* astroroji.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,17 +444,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = astroroji/astroroji.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"astroroji/Preview Content\"";
 				DEVELOPMENT_TEAM = D6L69DDKK8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -440,6 +466,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.retrowhale.astroroji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,17 +478,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = astroroji/astroroji.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"astroroji/Preview Content\"";
 				DEVELOPMENT_TEAM = D6L69DDKK8;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				"IPHONEOS_DEPLOYMENT_TARGET[sdk=macosx*]" = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -469,6 +500,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.retrowhale.astroroji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

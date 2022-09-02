@@ -9,12 +9,18 @@ import SwiftUI
 
 @main
 struct astrorojiApp: App {
-    let persistenceController = PersistenceController.shared
-
+    //    let persistenceController = PersistenceController.shared
+    
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            MainView()
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+            //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            
+            BottomTabView()
+                .frame(maxHeight: 50, alignment: .bottom)
+            
         }
     }
 }
