@@ -10,17 +10,16 @@ import SwiftUI
 @main
 struct astrorojiApp: App {
     //    let persistenceController = PersistenceController.shared
+    var network = Network()
     
     
     var body: some Scene {
         WindowGroup {
             MainView()
-                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
             //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
-            
-            BottomTabView()
-                .frame(maxHeight: 50, alignment: .bottom)
-            
+                .environmentObject(network)
+
         }
+        
     }
 }
