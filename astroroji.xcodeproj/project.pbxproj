@@ -21,6 +21,8 @@
 		34B2972B28121BE0004D544A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2972A28121BE0004D544A /* MainView.swift */; };
 		34B2972D28122CFB004D544A /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2972C28122CFA004D544A /* IconView.swift */; };
 		34B2973128123031004D544A /* HoroscopeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2973028123031004D544A /* HoroscopeApi.swift */; };
+		34C18B30290395AA0015803D /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C18B2F290395AA0015803D /* Shared.swift */; };
+		34C18B3229039C610015803D /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C18B3129039C610015803D /* NetworkMonitor.swift */; };
 		34DA30EE2893103200783D7F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DA30ED2893103200783D7F /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		34B2972A28121BE0004D544A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		34B2972C28122CFA004D544A /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		34B2973028123031004D544A /* HoroscopeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeApi.swift; sourceTree = "<group>"; };
+		34C18B2F290395AA0015803D /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		34C18B3129039C610015803D /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		34DA30ED2893103200783D7F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				348EBE6828D10757009890AC /* NavigationConfigurator.swift */,
+				34C18B2F290395AA0015803D /* Shared.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -114,6 +119,7 @@
 			children = (
 				34B2973028123031004D544A /* HoroscopeApi.swift */,
 				34B2970028121A37004D544A /* Persistence.swift */,
+				34C18B3129039C610015803D /* NetworkMonitor.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -310,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34B2972D28122CFB004D544A /* IconView.swift in Sources */,
+				34C18B3229039C610015803D /* NetworkMonitor.swift in Sources */,
 				34B2972B28121BE0004D544A /* MainView.swift in Sources */,
 				34B2970128121A37004D544A /* Persistence.swift in Sources */,
 				348EBE6728D0F280009890AC /* HoroscopeSheetView.swift in Sources */,
@@ -317,6 +324,7 @@
 				34B296FA28121A34004D544A /* ContentView.swift in Sources */,
 				34B296F828121A34004D544A /* astrorojiApp.swift in Sources */,
 				34B2973128123031004D544A /* HoroscopeApi.swift in Sources */,
+				34C18B30290395AA0015803D /* Shared.swift in Sources */,
 				348EBE6928D10757009890AC /* NavigationConfigurator.swift in Sources */,
 				34B2970428121A37004D544A /* astroroji.xcdatamodeld in Sources */,
 			);
@@ -359,6 +367,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -405,7 +415,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -419,6 +429,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_ALTERNATE_APPICON_NAMES = "";
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -459,7 +471,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -485,6 +497,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 16;
@@ -493,12 +506,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.retrowhale.astroroji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -521,6 +534,7 @@
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIRequiresFullScreen = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				IPHONEOS_DEPLOYMENT_TARGET = 16;
 				"IPHONEOS_DEPLOYMENT_TARGET[sdk=iphoneos*]" = 16;
@@ -529,12 +543,12 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.8;
 				PRODUCT_BUNDLE_IDENTIFIER = ca.retrowhale.astroroji;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = YES;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

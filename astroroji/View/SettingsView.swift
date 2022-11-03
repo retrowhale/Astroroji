@@ -9,11 +9,15 @@
 import SwiftUI
 
 struct SettingsView: View {
+    
+    @EnvironmentObject var shared : Shared
+
     var body: some View {
         NavigationView{
             Form{
-                Text("Account")
                 Section{
+
+                    Text("App Version : \(shared.appVersionString)")
                 }
             }
             .navigationTitle("Settings")
@@ -24,5 +28,6 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
+            .environmentObject(Shared())
     }
 }
