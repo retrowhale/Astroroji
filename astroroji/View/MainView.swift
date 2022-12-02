@@ -11,7 +11,7 @@ struct MainView: View {
     
     @Environment(\.presentationMode) var presentationMode
     @EnvironmentObject var network: Network
-    @EnvironmentObject var shared : Shared
+    @EnvironmentObject var shared : ViewData
     @EnvironmentObject var networkMonitor : NetworkMonitor
     @State private var showInternetAlertSheet = false
 
@@ -29,7 +29,7 @@ struct MainView: View {
                             .tabItem {
                                 Label("Settings", systemImage: "gear")
                             }
-                            .environmentObject(Shared())
+                            .environmentObject(ViewData())
                     }
                     .accentColor(.green)
                 }
@@ -41,13 +41,11 @@ struct MainView: View {
 
 
 
-
-
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
         MainView()
             .environmentObject(Network())
-            .environmentObject(Shared())
+            .environmentObject(ViewData())
             .environmentObject(NetworkMonitor())
     }
 }

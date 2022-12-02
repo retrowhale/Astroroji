@@ -18,8 +18,6 @@ struct astrorojiApp: App {
             MainView()
             //                .environment(\.managedObjectContext, persistenceController.container.viewContext)
                 .environmentObject(network)
-
         }
-        
     }
 }

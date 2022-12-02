@@ -8,8 +8,7 @@
 import Foundation
 
 
-
-class Shared : ObservableObject {
+class ViewData : ObservableObject {
     
     @Published var appVersionString: String = Bundle.main.object(forInfoDictionaryKey: "CFBundleShortVersionString") as! String
     

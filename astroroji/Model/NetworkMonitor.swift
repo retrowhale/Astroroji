@@ -26,7 +26,6 @@ final class NetworkMonitor: ObservableObject {
         monitor.start(queue: queue)
     }
     
-    
     init() {
         monitor.pathUpdateHandler = { [weak self] path in
             DispatchQueue.main.async {

@@ -7,10 +7,12 @@
 
 
 import SwiftUI
+import UserNotifications
+
 
 struct SettingsView: View {
     
-    @EnvironmentObject var shared : Shared
+    @EnvironmentObject var shared : ViewData
 
     var body: some View {
         NavigationView{
@@ -28,6 +30,6 @@ struct SettingsView: View {
 struct SettingsView_Previews: PreviewProvider {
     static var previews: some View {
         SettingsView()
-            .environmentObject(Shared())
+            .environmentObject(ViewData())
     }
 }

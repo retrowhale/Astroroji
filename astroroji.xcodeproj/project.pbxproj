@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		348EBE6728D0F280009890AC /* HoroscopeSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EBE6628D0F280009890AC /* HoroscopeSheetView.swift */; };
-		348EBE6928D10757009890AC /* NavigationConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348EBE6828D10757009890AC /* NavigationConfigurator.swift */; };
 		34B296F828121A34004D544A /* astrorojiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B296F728121A34004D544A /* astrorojiApp.swift */; };
 		34B296FA28121A34004D544A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B296F928121A34004D544A /* ContentView.swift */; };
 		34B296FC28121A37004D544A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 34B296FB28121A37004D544A /* Assets.xcassets */; };
@@ -21,7 +20,7 @@
 		34B2972B28121BE0004D544A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2972A28121BE0004D544A /* MainView.swift */; };
 		34B2972D28122CFB004D544A /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2972C28122CFA004D544A /* IconView.swift */; };
 		34B2973128123031004D544A /* HoroscopeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2973028123031004D544A /* HoroscopeApi.swift */; };
-		34C18B30290395AA0015803D /* Shared.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C18B2F290395AA0015803D /* Shared.swift */; };
+		34C18B30290395AA0015803D /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C18B2F290395AA0015803D /* ViewData.swift */; };
 		34C18B3229039C610015803D /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C18B3129039C610015803D /* NetworkMonitor.swift */; };
 		34DA30EE2893103200783D7F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DA30ED2893103200783D7F /* SettingsView.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +44,6 @@
 
 /* Begin PBXFileReference section */
 		348EBE6628D0F280009890AC /* HoroscopeSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeSheetView.swift; sourceTree = "<group>"; };
-		348EBE6828D10757009890AC /* NavigationConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConfigurator.swift; sourceTree = "<group>"; };
 		348EBE6A28D1485C009890AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		349BFDF32818FDED00E80831 /* astroroji.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = astroroji.entitlements; sourceTree = "<group>"; };
 		34B296F428121A34004D544A /* astroroji.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = astroroji.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,7 +61,7 @@
 		34B2972A28121BE0004D544A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		34B2972C28122CFA004D544A /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		34B2973028123031004D544A /* HoroscopeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeApi.swift; sourceTree = "<group>"; };
-		34C18B2F290395AA0015803D /* Shared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shared.swift; sourceTree = "<group>"; };
+		34C18B2F290395AA0015803D /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
 		34C18B3129039C610015803D /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		34DA30ED2893103200783D7F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -96,8 +94,7 @@
 		347B20C528D0E5E40004ADFB /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				348EBE6828D10757009890AC /* NavigationConfigurator.swift */,
-				34C18B2F290395AA0015803D /* Shared.swift */,
+				34C18B2F290395AA0015803D /* ViewData.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -324,8 +321,7 @@
 				34B296FA28121A34004D544A /* ContentView.swift in Sources */,
 				34B296F828121A34004D544A /* astrorojiApp.swift in Sources */,
 				34B2973128123031004D544A /* HoroscopeApi.swift in Sources */,
-				34C18B30290395AA0015803D /* Shared.swift in Sources */,
-				348EBE6928D10757009890AC /* NavigationConfigurator.swift in Sources */,
+				34C18B30290395AA0015803D /* ViewData.swift in Sources */,
 				34B2970428121A37004D544A /* astroroji.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
