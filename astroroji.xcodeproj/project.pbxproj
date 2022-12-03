@@ -20,6 +20,9 @@
 		34B2972B28121BE0004D544A /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2972A28121BE0004D544A /* MainView.swift */; };
 		34B2972D28122CFB004D544A /* IconView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2972C28122CFA004D544A /* IconView.swift */; };
 		34B2973128123031004D544A /* HoroscopeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34B2973028123031004D544A /* HoroscopeApi.swift */; };
+		34B5B361293ADF8C0063CD55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 34B5B360293ADF8C0063CD55 /* GoogleService-Info.plist */; };
+		34B5B365293AE0BF0063CD55 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 34B5B364293AE0BF0063CD55 /* FirebaseAnalytics */; };
+		34B5B367293AE0BF0063CD55 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 34B5B366293AE0BF0063CD55 /* FirebaseAnalyticsWithoutAdIdSupport */; };
 		34C18B30290395AA0015803D /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C18B2F290395AA0015803D /* ViewData.swift */; };
 		34C18B3229039C610015803D /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34C18B3129039C610015803D /* NetworkMonitor.swift */; };
 		34DA30EE2893103200783D7F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DA30ED2893103200783D7F /* SettingsView.swift */; };
@@ -61,6 +64,8 @@
 		34B2972A28121BE0004D544A /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		34B2972C28122CFA004D544A /* IconView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconView.swift; sourceTree = "<group>"; };
 		34B2973028123031004D544A /* HoroscopeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoroscopeApi.swift; sourceTree = "<group>"; };
+		34B5B360293ADF8C0063CD55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		34B5B362293ADF930063CD55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		34C18B2F290395AA0015803D /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
 		34C18B3129039C610015803D /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		34DA30ED2893103200783D7F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
@@ -71,6 +76,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34B5B365293AE0BF0063CD55 /* FirebaseAnalytics in Frameworks */,
+				34B5B367293AE0BF0063CD55 /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +132,7 @@
 			isa = PBXGroup;
 			children = (
 				34B296F628121A34004D544A /* astroroji */,
+				34B5B360293ADF8C0063CD55 /* GoogleService-Info.plist */,
 				34B2970C28121A37004D544A /* astrorojiTests */,
 				34B2971628121A37004D544A /* astrorojiUITests */,
 				34B296F528121A34004D544A /* Products */,
@@ -147,6 +155,7 @@
 				348EBE6A28D1485C009890AC /* Info.plist */,
 				349BFDF32818FDED00E80831 /* astroroji.entitlements */,
 				34B296F728121A34004D544A /* astrorojiApp.swift */,
+				34B5B362293ADF930063CD55 /* GoogleService-Info.plist */,
 				347B20C728D0E5F20004ADFB /* Model */,
 				347B20C628D0E5EA0004ADFB /* View */,
 				347B20C528D0E5E40004ADFB /* ViewModel */,
@@ -198,6 +207,10 @@
 			dependencies = (
 			);
 			name = astroroji;
+			packageProductDependencies = (
+				34B5B364293AE0BF0063CD55 /* FirebaseAnalytics */,
+				34B5B366293AE0BF0063CD55 /* FirebaseAnalyticsWithoutAdIdSupport */,
+			);
 			productName = astroroji;
 			productReference = 34B296F428121A34004D544A /* astroroji.app */;
 			productType = "com.apple.product-type.application";
@@ -270,6 +283,9 @@
 				Base,
 			);
 			mainGroup = 34B296EB28121A34004D544A;
+			packageReferences = (
+				34B5B363293AE0BF0063CD55 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 34B296F528121A34004D544A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -288,6 +304,7 @@
 			files = (
 				34B296FF28121A37004D544A /* Preview Assets.xcassets in Resources */,
 				34B296FC28121A37004D544A /* Assets.xcassets in Resources */,
+				34B5B361293ADF8C0063CD55 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -667,6 +684,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		34B5B363293AE0BF0063CD55 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		34B5B364293AE0BF0063CD55 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34B5B363293AE0BF0063CD55 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		34B5B366293AE0BF0063CD55 /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 34B5B363293AE0BF0063CD55 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		34B2970228121A37004D544A /* astroroji.xcdatamodeld */ = {
