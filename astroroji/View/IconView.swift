@@ -19,33 +19,36 @@ struct IconView: View {
             HStack {
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.aquariusURL)
+                        network.getHoroscope(horoscope: "aquarius", date: "today")
+                        network.sign = "Aquarius"
                         showingSheet.toggle()
                         print("aquarius")
                     } label : {
-                        Image("aquarius")
+                        Image("Aquarius")
                             .resizable()
                             .scaledToFit()
                     }
                 }
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.picsecURL)
+                        network.getHoroscope(horoscope: "picses", date: "today")
+                        network.sign = "Pisces"
                         showingSheet.toggle()
                         print("pisces")
                     } label : {
-                        Image("pisces")
+                        Image("Pisces")
                             .resizable()
                             .scaledToFit()
                     }
                 }
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.ariesURL)
+                        network.getHoroscope(horoscope: "aries", date: "today")
+                        network.sign = "Aries"
                         showingSheet.toggle()
                         print("aries")
                     } label: {
-                        Image("aries")
+                        Image("Aries")
                             .resizable()
                             .padding(.leading, -10.0)
                             .scaledToFit()
@@ -55,33 +58,36 @@ struct IconView: View {
             HStack {
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.taurusURL)
+                        network.getHoroscope(horoscope: "taurus", date: "today")
+                        network.sign = "Taurus"
                         showingSheet.toggle()
                         print("taurus")
                     } label : {
-                        Image("taurus")
+                        Image("Taurus")
                             .resizable()
                             .scaledToFit()
                     }
                 }
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.geminiURL)
+                        network.getHoroscope(horoscope: "gemini", date: "today")
+                        network.sign = "Gemini"
                         showingSheet.toggle()
                         print("gemini")
                     } label : {
-                        Image("gemini")
+                        Image("Gemini")
                             .resizable()
                             .scaledToFit()
                     }
                 }
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.cancerURL)
+                        network.getHoroscope(horoscope: "cancer", date: "today")
+                        network.sign = "Cancer"
                         showingSheet.toggle()
                         print("cancer")
                     } label : {
-                        Image("cancer")
+                        Image("Cancer")
                             .resizable()
                             .scaledToFit()
                     }
@@ -90,33 +96,36 @@ struct IconView: View {
             HStack {
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.leoURL)
+                        network.getHoroscope(horoscope: "leo", date: "today")
+                        network.sign = "Leo"
                         showingSheet.toggle()
                         print("leo")
                     } label : {
-                        Image("leo")
+                        Image("Leo")
                             .resizable()
                             .scaledToFit()
                     }
                 }
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.virgoURL)
+                        network.getHoroscope(horoscope: "virgo", date: "today")
+                        network.sign = "Virgo"
                         showingSheet.toggle()
                         print("virgo")
                     } label : {
-                        Image("virgo")
+                        Image("Virgo")
                             .resizable()
                             .scaledToFit()
                     }
                 }
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.libraURL)
+                        network.getHoroscope(horoscope: "libra", date: "today")
+                        network.sign = "Libra"
                         showingSheet.toggle()
                         print("libra")
                     } label : {
-                        Image("libra")
+                        Image("Libra")
                             .resizable()
                             .scaledToFit()
                     }
@@ -125,33 +134,36 @@ struct IconView: View {
             HStack {
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.scorpioURL)
+                        network.getHoroscope(horoscope: "scorpio", date: "today")
+                        network.sign = "Scorpio"
                         showingSheet.toggle()
                         print("scorpio")
                     } label : {
-                        Image("scorpio")
+                        Image("Scorpio")
                             .resizable()
                             .scaledToFit()
                     }
                 }
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.sagittariusURL)
+                        network.getHoroscope(horoscope: "sagittarius", date: "today")
+                        network.sign = "Sagittarius"
                         showingSheet.toggle()
                         print("sagittarius")
                     } label : {
-                        Image("sagittarius")
+                        Image("Sagittarius")
                             .resizable()
                             .scaledToFit()
                     }
                 }
                 ZStack {
                     Button {
-                        network.getHoroscope(urlString: network.capricornURL)
+                        network.getHoroscope(horoscope: "capricorn", date: "today")
+                        network.sign = "Capricorn"
                         showingSheet.toggle()
                         print("capricorn")
                     } label : {
-                        Image("capricorn")
+                        Image("Capricorn")
                             .resizable()
                             .scaledToFit()
                     }
