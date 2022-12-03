@@ -13,18 +13,28 @@ struct HoroscopeSheetView: View {
     
     var body: some View {
         VStack{
-            HStack {
+            VStack {
                 Text(network.sign)
                     .font(.title)
                     .bold()
-            } .padding()
-            HStack{
-                Text("Date: \(network.date)")
+                Text(network.dateRange)
+            }
+            VStack{
+                Text("Date: \(network.currentDate)")
+            }
+            VStack{
+                Text("Lucky Time : \(network.luckyTime)")
+                Text("Lucky No : \(network.luckyNumber)")
+                Text("Mood: \(network.mood)")
+                Text("Color : \(network.color)")
+                Text("Compatibility : \(network.compatibility)")
             }.padding()
-            Text("Daily Reading : \(network.horoscopeInfo)")
+            Text("Daily Reading : \(network.aztroDescription)")
         }.padding()
     }
 }
+
+
 
 struct HoroscopeSheetView_Previews: PreviewProvider {
     static var previews: some View {
