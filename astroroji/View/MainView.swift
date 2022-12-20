@@ -14,8 +14,9 @@ struct MainView: View {
     @EnvironmentObject var shared : ViewData
     @EnvironmentObject var networkMonitor : NetworkMonitor
     @State private var showInternetAlertSheet = false
-
     
+    
+
     var body: some View {
         NavigationView {
             VStack {
@@ -36,6 +37,7 @@ struct MainView: View {
             }
         }
         .navigationViewStyle(.stack)
+        
     }
 }
 

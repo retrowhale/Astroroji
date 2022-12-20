@@ -13,13 +13,19 @@ import UserNotifications
 struct SettingsView: View {
     
     @EnvironmentObject var shared : ViewData
-
+    
     var body: some View {
+        
         NavigationView{
             Form{
-                Section{
-
-                    Text("App Version : \(shared.appVersionString)")
+                Section("Account"){
+                    Text("User Information")
+                    
+                }
+                Section("App Information"){
+                    Text("App Version      \(shared.appVersionString)")
+                    Text("User Aggrement")
+                    Text("Disclaimer")
                 }
             }
             .navigationTitle("Settings")
